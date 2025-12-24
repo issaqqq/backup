@@ -7,9 +7,14 @@ from watchdog.events import FileSystemEventHandler
 from telegram import Bot
 
 # --- CONFIGURATION ---
-TOKEN = '8236308872:AAE92UfV2MXLQoq6IcAcQ7esKsb2VCUKQNY'  # Your Telegram Bot Token
-CHANNEL_ID = '@TestBackup' # e.g., "@my_channel" or "-100123456789"
-WATCH_FOLDER = r'C:\Users\YourName\Desktop\BackupFolder'  # Path to watch
+TOKEN = '8236308872:AAE92UfV2MXLQoq6IcAcQ7esKsb2VCUKQNY'  
+# Your Telegram Bot Token
+
+CHANNEL_ID = '@TestBackup' 
+# e.g., "@my_channel" or "-100123456789"
+
+WATCH_FOLDER = r'C:\Users\YourName\Desktop\BackupFolder'  
+# Path to watch
 
 class UploaderHandler(FileSystemEventHandler):
     def __init__(self, bot, loop):
