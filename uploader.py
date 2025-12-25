@@ -5,8 +5,9 @@ from telethon import TelegramClient
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
-# --- CONFIGURATION ---
-# Get these from my.telegram.org
+#This script monitors a folder and uploads new files to a Telegram channel using Telethon.
+#This doesn't use a bot, but a user account.
+
 API_ID = 123123123          
 # Your real API ID (Integer)
 
@@ -17,7 +18,7 @@ API_HASH = '123123ABCABC'
 CHANNEL_ID = -100123123
 
 # Folder to watch
-WATCH_FOLDER = r'C:\Users\mylap\Documents\A\Blip\Backup'
+WATCH_FOLDER = r'C:\Users\{YourName}\Desktop\BackupFolder'
 
 # A queue to hold files so the detector never gets stuck waiting
 file_queue = asyncio.Queue()
@@ -50,9 +51,10 @@ async def upload_worker(client):
             initial_size = -1
             while initial_size != os.path.getsize(file_path):
                 initial_size = os.path.getsize(file_path)
-                await asyncio.sleep(1) # Wait 1s and check size again
+                await asyncio.sleep(1) 
+                # Wait 1s and check size again
             
-            # Upload up to 2GB/4GB
+            # Upload up to 2GB/4GB files
             await client.send_file(CHANNEL_ID, file_path, caption=file_name)
             print(f"✅ Finished: {file_name}")
             

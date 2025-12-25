@@ -6,6 +6,8 @@ from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 from telegram import Bot
 
+# This script works similarly to uploader.py but uses a bot instead of a user account.
+
 # --- CONFIGURATION ---
 TOKEN = '123123:SOMETOKEN'  
 # Your Telegram Bot Token
