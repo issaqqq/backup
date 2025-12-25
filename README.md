@@ -1,4 +1,4 @@
-# 📂 Auto Telegram Uploader
+## 📂 Auto Telegram Uploader
 
 A high-performance Python automation script that monitors a local folder and instantly uploads any new files to a specific Telegram Channel.
 

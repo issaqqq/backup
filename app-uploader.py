@@ -17,7 +17,7 @@ API_HASH = '123123ABCABC'
 # Use your Channel ID (starts with -100)
 CHANNEL_ID = -100123123
 
-# Folder to watch
+# Folder to watch folder
 WATCH_FOLDER = r'C:\Users\{YourName}\Desktop\BackupFolder'
 
 # A queue to hold files so the detector never gets stuck waiting

@@ -16,7 +16,7 @@ CHANNEL_ID = '-123123123'
 # e.g., "-100123456789"
 
 WATCH_FOLDER = r'C:\Users\{YourName}\Desktop\BackupFolder'  
-# Path to watch     
+# Path to watch folder  
 
 
 class UploaderHandler(FileSystemEventHandler):
