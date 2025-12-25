@@ -1,5 +1,3 @@
-# backup
-
 # 📂 Auto Telegram Uploader
 
 A high-performance Python automation script that monitors a local folder and instantly uploads any new files to a specific Telegram Channel.
@@ -19,10 +17,10 @@ Built with **Telethon** and **Watchdog**, this tool acts as a "Userbot," bypassi
 * **Python 3.7+**
 * A Telegram Account
 * API Credentials from Telegram
+* Telegram Bot from @gotfather 
 
 ## 📦 Installation
 
 1. **Clone the repository** (or create your project folder):
    ```bash
-   git clone [https://github.com/yourusername/auto-telegram-uploader.git](https://github.com/yourusername/auto-telegram-uploader.git)
-   cd auto-telegram-uploader
+pip install telethon watchdog
