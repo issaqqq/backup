@@ -26,7 +26,7 @@ Built with **Telethon** and **Watchdog**, this tool acts as a "Userbot," bypassi
    pip install telethon watchdog python-telegram-bot asyncio
    ```
 
-**Run using this
+**Run using this**
    ```bash
    python bot-uploader.py  OR
    python app-uploader.py
