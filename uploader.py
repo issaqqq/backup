@@ -7,19 +7,17 @@ from watchdog.events import FileSystemEventHandler
 
 # --- CONFIGURATION ---
 # Get these from my.telegram.org
-API_ID = 36963738          
+API_ID = 123123123          
 # Your real API ID (Integer)
 
-API_HASH = '3178ddd34c256a6220d5b6618b80a1b4' 
+API_HASH = '123123ABCABC' 
 # Your real API Hash (String)
 
 # Use your Channel ID (starts with -100)
-CHANNEL_ID = -1002270349935
+CHANNEL_ID = -100123123
 
 # Folder to watch
 WATCH_FOLDER = r'C:\Users\mylap\Documents\A\Blip\Backup'
-
-# --- THE CODE ---
 
 # A queue to hold files so the detector never gets stuck waiting
 file_queue = asyncio.Queue()
