@@ -18,7 +18,7 @@ API_HASH = '123123ABCABC'
 CHANNEL_ID = -100123123
 
 # Folder to watch folder
-WATCH_FOLDER = r'C:\Users\{YourName}\Desktop\BackupFolder'
+WATCH_FOLDER = r'C:\Users\{YourName}\Pictures\BackupFolder'
 
 # A queue to hold files so the detector never gets stuck waiting
 file_queue = asyncio.Queue()
